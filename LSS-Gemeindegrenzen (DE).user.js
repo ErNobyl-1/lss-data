@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         LSS-Gemeindegrenzen (DE)
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Einstellbare Gemeindegrenzen - sehr Zeit-/Leistungsintensiv
 // @author       Jalibu (Original), bearbeitet und angepasst von ErNobyl
 // @match        https://www.leitstellenspiel.de/
+// @match        https://www.leitstellenspiel.de/*
 // @match        https://www.leitstellenspiel.de/profile/*
 // @match        https://polizei.leitstellenspiel.de/
 // @match        https://polizei.leitstellenspiel.de/profile/*
@@ -21,7 +22,7 @@
 
     var myStyle = {
         "weight": 2,
-        "fillOpacity": 0.025
+        "fillOpacity": 0.05
     };
 
     let openBtn = '<div id="gemeinden-openBtn" class="leaflet-bar leaflet-control leaflet-control-custom map-expand-button" style="background-image: url(https://raw.githubusercontent.com/jalibu/LSHeat/master/icons8-germany-map-50.png); background-color: white; width: 26px; height: 26px;"></div>';
